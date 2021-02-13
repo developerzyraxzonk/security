@@ -1,0 +1,27 @@
+{
+    "name": "xdevpusaka/security",
+    "description": "Laravel Validation and Upload File",
+    "keywords": [
+        "pusaka",
+        "laravel",
+        "security"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Richard",
+            "email": "developer@xdevpusaka.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xdevpusaka\\Security\\": "src/"
+        }
+    },
+    "prefer-stable": true
+}
