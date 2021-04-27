@@ -1,6 +1,6 @@
 {
     "name": "xdevpusaka/security",
-    "description": "Laravel Validation and Upload File",
+    "description": "Pusaka Security, Cryptografi, Authentication",
     "keywords": [
         "pusaka",
         "laravel",

@@ -56,7 +56,7 @@ class Auth {
 
 		$Jwt 	= new Jwt();
 
-		if( !$Jwt->verify( $key, $data ) ) {
+		if( !$Jwt->verify( $key, $token ) ) {
 
 			return NULL;
 		
@@ -80,7 +80,15 @@ class Auth {
 
 	}
 
-	static function getToken( $token ) {
+	static function user() {
+
+		$token = self::getToken();
+
+		return self::payload($token);
+
+	}
+
+	static function getToken() {
 
 		if (session_status() == PHP_SESSION_NONE) {
 		    session_start();
